@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin: ["https://to-do-app-25-zeta.vercel.app", "http://127.0.0.1:5500"],
+    origin: ["https://to-do-app-25-zeta.vercel.app"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true
 }

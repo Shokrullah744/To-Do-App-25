@@ -1,7 +1,7 @@
 
 
 // ------------------ ↓ GLOBAL VARIABLES (ALLOWED TO BE USED IN EVERY FUNCTION ONWARDS) ↓ ------------------
-const URL = "http://localhost:3000";
+const URL = "https://to-do-app-25.onrender.com";
 
 const taskForm =document.getElementById("taskForm");
  const toDoList = document.getElementById("toDoList");
