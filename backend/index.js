@@ -10,8 +10,17 @@ const app = express();
 
 // -------------------------------- ↓ MIDDLEWARE SETUP ↓ -----------------------------------
 
+// app.use(cors("*"));
+
 app.use(express.json());
-app.use(cors("*"));
+
+const corsOptions = {
+    origin: ["https://to-do-app-25-zeta.vercel.app", "http://127.0.0.1:5500"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true
+}
+
+app.use(cors(corsOptions));
 
 
 
